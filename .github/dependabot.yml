@@ -6,6 +6,7 @@ updates:
   # updates a submodule to the latest commit on the branch given in .gitmodules.
   # if branch not given, then it defaults to the main/master branch.
   - package-ecosystem: gitsubmodule
+    open-pull-requests-limit: 0
     schedule:
       interval: "weekly"
     directory: /
@@ -24,6 +25,7 @@ updates:
       - dependency-name: "toolchains/riscv-tools/riscv-tests"
   # submit a PR for bumping GH-A dependencies
   - package-ecosystem: github-actions
+    open-pull-requests-limit: 0
     schedule:
       interval: "weekly"
     directory: /
